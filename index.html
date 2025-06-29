@@ -3,452 +3,294 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Full Circle Psychology - Expert Psychological Services</title>
-    <meta name="description" content="Professional psychology practice offering ADHD assessments, mental health evaluations, learning disability testing, and cognitive rehabilitation with short wait times in Brooklyn, NY.">
-    <meta property="og:title" content="Full Circle Psychology - Expert Psychological Services">
-    <meta property="og:description" content="Boutique psychology practice with expert assessments, therapy, and short wait times. Serving NYC and 42 states via telehealth.">
-    <meta property="og:type" content="website">
+    <title>Full Circle Psychology - Dr. Tsang, PsyD</title>
+    <meta name="description" content="Full Circle Psychology - A boutique psychology practice with short wait times for expert care. Comprehensive psychological assessments and therapy services.">
+    <meta name="keywords" content="psychology, ADHD assessment, autism evaluation, learning disabilities, test accommodations, mental health, therapy, Brooklyn NY">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: #fff;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-        
-        header {
-            background: #1e40af;
-            color: white;
-            padding: 1rem 0;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-        }
-        
-        .nav-links {
-            display: flex;
-            list-style: none;
-            gap: 2rem;
-        }
-        
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            transition: opacity 0.2s;
-        }
-        
-        .nav-links a:hover {
-            opacity: 0.8;
-        }
-        
-        .hero {
-            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
-            color: white;
-            padding: 8rem 0 6rem;
-            text-align: center;
-            margin-top: 70px;
-        }
-        
-        .hero h1 {
-            font-size: 3.5rem;
-            font-weight: 700;
-            margin-bottom: 1.5rem;
-            line-height: 1.1;
-        }
-        
-        .hero p {
-            font-size: 1.25rem;
-            margin-bottom: 2.5rem;
-            opacity: 0.95;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        .btn {
-            display: inline-block;
-            background: #16a34a;
-            color: white;
-            padding: 1rem 2.5rem;
-            border-radius: 0.5rem;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1.1rem;
-            transition: all 0.2s;
-            box-shadow: 0 4px 15px rgba(22, 163, 74, 0.3);
-        }
-        
-        .btn:hover {
-            background: #15803d;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(22, 163, 74, 0.4);
-        }
-        
-        .services {
-            padding: 6rem 0;
-            background: #f8fafc;
-        }
-        
-        .services h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            color: #1e40af;
-        }
-        
-        .services-subtitle {
-            text-align: center;
-            font-size: 1.2rem;
-            color: #64748b;
-            margin-bottom: 4rem;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2rem;
-        }
-        
-        .service-card {
-            background: white;
-            padding: 2.5rem;
-            border-radius: 1rem;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-            transition: transform 0.2s, box-shadow 0.2s;
-            border: 1px solid #e2e8f0;
-        }
-        
-        .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-        }
-        
-        .service-card h3 {
-            color: #1e40af;
-            margin-bottom: 1rem;
-            font-size: 1.3rem;
-            font-weight: 600;
-        }
-        
-        .service-card p {
-            color: #475569;
-            line-height: 1.7;
-        }
-        
-        .about {
-            padding: 6rem 0;
-        }
-        
-        .about h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            color: #1e40af;
-        }
-        
-        .about-subtitle {
-            text-align: center;
-            font-size: 1.2rem;
-            color: #64748b;
-            margin-bottom: 4rem;
-        }
-        
-        .about-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            align-items: center;
-        }
-        
-        .about-text p {
-            margin-bottom: 1.5rem;
-            color: #475569;
-            line-height: 1.7;
-        }
-        
-        .about-features {
-            background: #f1f5f9;
-            padding: 2rem;
-            border-radius: 1rem;
-        }
-        
-        .about-features h3 {
-            color: #1e40af;
-            margin-bottom: 1.5rem;
-            font-size: 1.3rem;
-        }
-        
-        .about-features ul {
-            list-style: none;
-        }
-        
-        .about-features li {
-            padding: 0.5rem 0;
-            color: #475569;
-            position: relative;
-            padding-left: 1.5rem;
-        }
-        
-        .about-features li:before {
-            content: "✓";
-            position: absolute;
-            left: 0;
-            color: #16a34a;
-            font-weight: bold;
-        }
-        
-        .contact {
-            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
-            color: white;
-            padding: 6rem 0;
-            text-align: center;
-        }
-        
-        .contact h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-        
-        .contact-subtitle {
-            font-size: 1.2rem;
-            margin-bottom: 3rem;
-            opacity: 0.9;
-        }
-        
-        .contact-info {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-        
-        .contact-card {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 2rem;
-            border-radius: 1rem;
-            backdrop-filter: blur(10px);
-        }
-        
-        .contact-card h3 {
-            font-size: 1.2rem;
-            margin-bottom: 1rem;
-            color: #ffffff;
-        }
-        
-        .contact-card p {
-            font-size: 1.1rem;
-            opacity: 0.9;
-        }
-        
-        footer {
-            background: #0f172a;
-            color: white;
-            padding: 3rem 0;
-            text-align: center;
-        }
-        
-        footer p {
-            opacity: 0.8;
-            margin: 0.5rem 0;
-        }
-        
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-            
-            .hero p {
-                font-size: 1.1rem;
-            }
-            
-            .about-content {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-            
-            .nav-links {
-                display: none;
-            }
-            
-            .services-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .container {
-                padding: 0 1rem;
-            }
-        }
-        
-        .scroll-smooth {
-            scroll-behavior: smooth;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="scroll-smooth">
-    <header>
-        <nav class="container">
-            <div class="logo">Full Circle Psychology</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<body>
+    <a href="#main-content" class="skip-link">Skip to Main Content</a>
 
-    <section id="home" class="hero">
-        <div class="container">
-            <h1>Expert Psychological Services</h1>
-            <p>Comprehensive assessments and therapy with short wait times. Serving NYC and 42 states via telehealth.</p>
-            <a href="#contact" class="btn">Book Appointment</a>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <img src="https://static.wixstatic.com/media/46dd91_2029d59481de4056aca46114e05b50edf000.jpg/v1/fill/w_1920,h_1019,al_c,q_85,usm_0.33_1.00_0.00,enc_avif,quality_auto/46dd91_2029d59481de4056aca46114e05b50edf000.jpg" alt="Psychology practice background" loading="lazy">
+        </div>
+        <div class="hero-content">
+            <h1>Full Circle Psychology</h1>
+            <p class="hero-subtitle">A boutique service with short wait times for expert care</p>
+            <a href="mailto:drtsangpsyd@gmail.com" class="cta-button">Connect with Us</a>
         </div>
     </section>
 
-    <section id="services" class="services">
-        <div class="container">
-            <h2>Our Services</h2>
-            <p class="services-subtitle">Comprehensive psychological care tailored to your needs</p>
-            <div class="services-grid">
-                <div class="service-card">
-                    <h3>ADHD Assessments</h3>
-                    <p>Comprehensive evaluations for children and adults to diagnose ADHD and develop personalized treatment plans using evidence-based assessment tools.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Learning Disability Testing</h3>
-                    <p>Detailed assessments to identify learning differences and provide recommendations for academic success and accommodation planning.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Mental Health Evaluations</h3>
-                    <p>Thorough psychological assessments for various mental health conditions using evidence-based approaches and standardized testing.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Cognitive Rehabilitation</h3>
-                    <p>Specialized therapy to improve cognitive function following injury or developmental challenges with personalized treatment plans.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Telehealth Services</h3>
-                    <p>Convenient online sessions available in 42 states for accessibility and flexibility without compromising quality of care.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Family Therapy</h3>
-                    <p>Collaborative approach to strengthen family relationships and improve communication through evidence-based therapeutic interventions.</p>
+    <main id="main-content">
+        <!-- Services Overview -->
+        <section class="services-section">
+            <div class="container">
+                <h2>Overview of Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4"/>
+                                <path d="M21 12c-1.5-1.5-3.5-2.5-6-2.5s-4.5 1-6 2.5"/>
+                                <circle cx="12" cy="12" r="10"/>
+                            </svg>
+                        </div>
+                        <h3>ADHD</h3>
+                        <p>Comprehensive assessments to diagnose and better understand Attention Deficit Hyperactivity Disorder (ADHD) symptoms.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <polyline points="14,2 14,8 20,8"/>
+                                <line x1="16" y1="13" x2="8" y2="13"/>
+                                <line x1="16" y1="17" x2="8" y2="17"/>
+                                <polyline points="10,9 9,9 8,9"/>
+                            </svg>
+                        </div>
+                        <h3>Test Accommodations</h3>
+                        <p>Assessments and documentation for accommodations on standardized tests.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                <circle cx="12" cy="7" r="4"/>
+                            </svg>
+                        </div>
+                        <h3>Mental Health Evaluations</h3>
+                        <p>Comprehensive assessments to understand and address mental health concerns.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                            </svg>
+                        </div>
+                        <h3>Cognitive Rehabilitation</h3>
+                        <p>Therapies designed to improve cognitive functioning and everyday life skills.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                        </div>
+                        <h3>Autism Spectrum Disorder</h3>
+                        <p>Personalized evaluations to identify autism spectrum disorder in adolescents/adults (16+).</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                            </svg>
+                        </div>
+                        <h3>Learning Disabilities</h3>
+                        <p>In-depth evaluations to diagnose and support learning differences.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                        <h3>Executive Coaching</h3>
+                        <p>Personalized coaching to boost productivity, leadership, and life management skills.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/>
+                            </svg>
+                        </div>
+                        <h3>Anxiety And Depression</h3>
+                        <p>Evidence-based treatments to address a variety of mental health needs. Find the care that works for you.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Full Circle Psychology</h2>
-            <p class="about-subtitle">Boutique psychology practice dedicated to excellence</p>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Full Circle Psychology is a boutique psychology practice dedicated to providing comprehensive, evidence-based psychological services. Our team of experienced psychologists specializes in assessments and therapy for children, adolescents, and adults.</p>
-                    <p>We pride ourselves on short wait times, personalized care, and building strong therapeutic relationships. Our practice serves clients both in-person in Brooklyn, NY, and via telehealth across 42 states.</p>
-                    <p>Our commitment to excellence ensures that every client receives the highest quality psychological care tailored to their unique needs and circumstances.</p>
-                </div>
-                <div class="about-features">
-                    <h3>Why Choose Us?</h3>
-                    <ul>
-                        <li>Short wait times for appointments</li>
-                        <li>Comprehensive psychological assessments</li>
-                        <li>Evidence-based treatment approaches</li>
-                        <li>Experienced, licensed psychologists</li>
-                        <li>Telehealth services available in 42 states</li>
-                        <li>Personalized treatment plans</li>
-                        <li>Professional, confidential environment</li>
-                        <li>Flexible scheduling options</li>
-                    </ul>
+        <!-- Assessment Info -->
+        <section class="assessment-info">
+            <div class="container">
+                <h2>Cognitive and mental health starts with a thorough assessment</h2>
+                <p class="lead">We confidently connect clients to the best treatment services, whether through our team or with vetted recommended providers.</p>
+                
+                <div class="client-types">
+                    <div class="client-type">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=300&h=300&fit=crop&crop=face" alt="Happy child" loading="lazy">
+                        <h4>Children</h4>
+                    </div>
+                    <div class="client-type">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop&crop=face" alt="Individual therapy" loading="lazy">
+                        <h4>Individual</h4>
+                    </div>
+                    <div class="client-type">
+                        <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=300&h=300&fit=crop&crop=face" alt="Couples therapy" loading="lazy">
+                        <h4>Couples</h4>
+                    </div>
+                    <div class="client-type">
+                        <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?w=300&h=300&fit=crop&crop=center" alt="Family therapy" loading="lazy">
+                        <h4>Family</h4>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p class="contact-subtitle">Ready to take the next step? We're here to help you on your journey to better mental health.</p>
-            <div class="contact-info">
-                <div class="contact-card">
-                    <h3>Phone</h3>
-                    <p>(555) 123-4567</p>
-                </div>
-                <div class="contact-card">
-                    <h3>Email</h3>
-                    <p>info@fullcirclepsychology.org</p>
-                </div>
-                <div class="contact-card">
-                    <h3>Location</h3>
-                    <p>Brooklyn, NY<br>Telehealth Available</p>
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <h2>Find your path</h2>
+                <p>Discover how our personalized approach can enhance your well-being and transform your quality of life.</p>
+                <a href="mailto:drtsangpsyd@gmail.com" class="cta-button">Book An Appointment Today</a>
+            </div>
+        </section>
+
+        <!-- Location Section -->
+        <section class="location-section">
+            <div class="container">
+                <div class="location-content">
+                    <div class="location-text">
+                        <h2>Convenient Care Options</h2>
+                        <p>Our practice offers convenient telehealth services to clients in 42 states, bringing expert care directly to you. For those in the NYC area, our office outside of Borough Hall in Brooklyn provides easy access to in-person services.</p>
+                        <address>
+                            26 Court Street, Ste 409<br>
+                            Brooklyn, NY 11242
+                        </address>
+                    </div>
+                    <div class="location-image">
+                        <img src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=600&h=400&fit=crop" alt="Brooklyn office location" loading="lazy">
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer>
+        <!-- Testimonial -->
+        <section class="testimonial-section">
+            <div class="container">
+                <blockquote>
+                    <p>"The thoroughness and precision of their evaluations are unmatched. My patients consistently express gratitude for the insights and support they receive, and I see tangible improvements in their lives."</p>
+                    <cite>DR. SANDRA | PSYCHIATRIST</cite>
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- Specialized Assessments -->
+        <section class="specialized-assessments">
+            <div class="container">
+                <h2>Personalized Assessments</h2>
+                <div class="assessment-categories">
+                    <div class="assessment-category">
+                        <h3>Pediatric and Adult</h3>
+                        <ul>
+                            <li>Attention deficit/Hyperactivity disorder (ADHD)</li>
+                            <li>Autoimmune disorders (e.g., Long COVID, Multiple Sclerosis, Lyme, ME/CFS)</li>
+                            <li>Autism</li>
+                            <li>Complex medical conditions</li>
+                            <li>Epilepsy</li>
+                            <li>Genetic disorders</li>
+                            <li>Insomnia</li>
+                            <li>Learning disabilities (e.g., Dyslexia)</li>
+                            <li>Memory disorders</li>
+                            <li>Movement disorders</li>
+                            <li>Psychiatric/psychological conditions</li>
+                            <li>Stroke/cerebrovascular disease</li>
+                            <li>TBI and Concussion</li>
+                        </ul>
+                    </div>
+
+                    <div class="assessment-category">
+                        <h3>Corporate/Executive</h3>
+                        <ul>
+                            <li>Executive Functioning Assessment</li>
+                            <li>Cognitive Ability Testing</li>
+                            <li>Emotional Intelligence (EI) Testing</li>
+                            <li>Stress and Resilience Assessments</li>
+                            <li>Leadership Assessments</li>
+                            <li>Personality Assessments</li>
+                            <li>Mental Health Screening</li>
+                            <li>Neurocognitive Testing for Aging Executives</li>
+                            <li>Decision-Making and Risk Assessment</li>
+                            <li>Burnout and Work-Life Balance Assessment</li>
+                        </ul>
+                    </div>
+
+                    <div class="assessment-category">
+                        <h3>Legal/Forensic</h3>
+                        <ul>
+                            <li>Independent Medical Evaluations</li>
+                            <li>Workers Compensation</li>
+                            <li>Expert testimony/witness</li>
+                            <li>Case review</li>
+                            <li>Fitness for duty</li>
+                            <li>Consultation</li>
+                        </ul>
+                    </div>
+
+                    <div class="assessment-category">
+                        <h3>Surgical</h3>
+                        <ul>
+                            <li>Pre/post surgery for organ transplant</li>
+                            <li>Brain tumors</li>
+                            <li>Deep brain stimulation</li>
+                            <li>Epilepsy</li>
+                            <li>Other medical conditions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="final-cta">
+            <div class="container">
+                <h2>Feeling Better Is Closer Than You Think.</h2>
+                <a href="mailto:drtsangpsyd@gmail.com" class="cta-button">Book An Appointment Today</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Full Circle Psychology. All rights reserved.</p>
-            <p>Licensed psychologists providing quality mental health services.</p>
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Full Circle Psychology</h3>
+                    <p>Professional psychological services with personalized care</p>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p>Email: <a href="mailto:drtsangpsyd@gmail.com">drtsangpsyd@gmail.com</a></p>
+                    <p>26 Court Street, Ste 409<br>Brooklyn, NY 11242</p>
+                </div>
+                <div class="footer-services">
+                    <h4>Services</h4>
+                    <p>Telehealth available in 42 states</p>
+                    <p>In-person appointments in Brooklyn, NY</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Full Circle Psychology. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
-    <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Add scroll effect to header
-        window.addEventListener('scroll', function() {
-            const header = document.querySelector('header');
-            if (window.scrollY > 100) {
-                header.style.background = 'rgba(30, 64, 175, 0.95)';
-                header.style.backdropFilter = 'blur(10px)';
-            } else {
-                header.style.background = '#1e40af';
-                header.style.backdropFilter = 'none';
-            }
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
